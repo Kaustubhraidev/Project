@@ -4,7 +4,20 @@ export default function Signin() {
     return (
       <>
         
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+        <div data-aos="fade-right" data-aos-delay="1000" className="flex flex-col bg-sky-100 p-3 rounded-2xl">
+          <div className=' font-bold  '>
+            <h4>Business Registeration</h4>
+          </div>
+          <div className='bg-sky-50 p-2 rounded-2xl'>
+            <form action="get">
+              <input type="text" placeholder='Business Name'/>
+              <input type="text" placeholder='Type of Business' />
+              <br /><button className='bg-black'>Submit</button>
+            </form>
+          </div>
+        </div>
+
+        {/* <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
               alt="Your Company"
@@ -74,7 +87,7 @@ export default function Signin() {
               </a>
             </p>
           </div>
-        </div>
+        </div> */}
       </>
     )
   }
